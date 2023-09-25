@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 
 export function getPokemons(){
 return async function(dispatch){
-  const response = await axios.get('http://localhost:3001/pokemons');
+  const response = await axios.get('https://pokemonprojectpage.onrender.com/pokemons');
   return dispatch({
     type: 'GET_POKEMONS',
     payload: response.data
@@ -11,7 +11,7 @@ return async function(dispatch){
 }};
 export function getTypes(){
   return async function(dispatch){
-    const response = await axios.get('http://localhost:3001/types')
+    const response = await axios.get('https://pokemonprojectpage.onrender.com/types')
     return dispatch({
       type: 'GET_TYPES',
       payload: response.data
@@ -19,7 +19,7 @@ export function getTypes(){
   }};
   export function getMoves(){
     return async function(dispatch){
-      const response = await axios.get('http://localhost:3001/moves')
+      const response = await axios.get('https://pokemonprojectpage.onrender.com/moves')
       return dispatch({
         type: 'GET_MOVES',
         payload: response.data
@@ -27,7 +27,7 @@ export function getTypes(){
   }};
   export function getAbilities(){
     return async function(dispatch){
-      const response = await axios.get('http://localhost:3001/abilities')
+      const response = await axios.get('https://pokemonprojectpage.onrender.com/abilities')
       return dispatch({
         type: 'GET_ABILITIES',
         payload: response.data
@@ -36,7 +36,7 @@ export function getTypes(){
 export function getName(name){
   return async function(dispatch){
     try{
-      const response = await axios.get(`http://localhost:3001/pokemons?name=${name}`)
+      const response = await axios.get(`https://pokemonprojectpage.onrender.com/pokemons?name=${name}`)
       return dispatch({
         type: 'GET_NAME',
         payload: response.data
@@ -52,7 +52,7 @@ export function getName(name){
 export function PostPokemon(payload){
   return async function(){
       try{
-          const response = await axios.post("http://localhost:3001/pokemons", payload)
+          const response = await axios.post("https://pokemonprojectpage.onrender.com/pokemons", payload)
           return response
       }catch(error){
           Swal.fire({
@@ -130,7 +130,7 @@ export function sortPokemonBySpeed(payload){
 export function getDetail(id) {
   return async function(dispatch){
       try{
-      const response = await axios.get(`http://localhost:3001/pokemons/${id}`)
+      const response = await axios.get(`https://pokemonprojectpage.onrender.com/pokemons/${id}`)
       return dispatch({
           type: "GET_DETAIL",
           payload: response.data
@@ -146,7 +146,7 @@ export function getDetail(id) {
 export function removePokemon(id){
   return async function(dispatch){
       try{       
-      const response = await axios.delete(`http://localhost:3001/deleted/${id}`);
+      const response = await axios.delete(`https://pokemonprojectpage.onrender.com/deleted/${id}`);
       return dispatch({
           type: "REMOVE_POKEMON",
           payload: response.data
