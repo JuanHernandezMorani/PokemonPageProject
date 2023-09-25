@@ -1,0 +1,328 @@
+img {
+  height: 150px;
+  margin: auto;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -10px;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.pages {
+  margin-top: -50px;
+  margin-bottom: 30px;
+  padding: 8px 8px;
+  background-color: #7e1abcca;
+  box-shadow: 0px 5px 20px -10px #000000;
+  cursor: pointer;
+}
+
+figure {
+  display: inline-block;
+  width: 333px;
+  margin-top: 40px;
+  padding: 1em;
+  border-radius: 15px;
+  background: #ddd;
+  text-align: left;
+
+}
+
+.cardCaption {
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 1em;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+}
+
+.cardImageContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 1em 1em 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.cardType {
+  position: relative;
+  top: -50px;
+  transform: translateY(-50%);
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.25em;
+  line-height: 1;
+  border-radius: 2px;
+  background: #bbbbbb;
+}
+
+.cardName {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.types {
+  display: flex;
+  justify-content: space-around;
+}
+
+.normal {
+  background: linear-gradient(110deg, #fdbb2d 0%, #3a1c71 100%);
+  box-shadow: 0px 5px 20px -10px #3a1c71;
+}
+
+.normal .cardType {
+  background-color: #c08a53;
+}
+
+.ground {
+  background: linear-gradient(110deg, #b1742c 0%, #724c1f 100%);
+  box-shadow: 0px 5px 20px -10px #3a1c71;
+}
+
+.ground .cardType {
+  background-color: #724c1f;
+}
+
+.rock {
+  background: linear-gradient(110deg, #491809 0%, #913f20 100%);
+  box-shadow: 0px 5px 20px -10px #3a1c71;
+}
+
+.rock .cardType {
+  background-color: #913f20;
+}
+
+.water {
+  background: linear-gradient(120deg, #1cb5e0 0%, #000851 100%);
+  box-shadow: 0px 5px 20px -10px #000851;
+}
+
+.water .cardType {
+  background-color: #1cb5e0;
+}
+
+.electric {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 222, 0, 1) 34%,
+    rgba(232, 255, 153, 1) 83%
+  );
+}
+
+.electric .cardType {
+  background-color: #000;
+}
+
+.fire {
+  background: linear-gradient(
+    0deg,
+    rgba(199, 24, 0, 1) 10%,
+    rgba(252, 194, 69, 1) 100%
+  );
+}
+
+.fire .cardType {
+  background-color: rgba(199, 24, 0, 1);
+}
+
+.psychic {
+  background: linear-gradient(
+    140deg,
+    rgba(255, 167, 249, 1) 0%,
+    rgba(255, 44, 195, 1) 39%,
+    rgba(255, 227, 167, 1) 100%
+  );
+}
+
+.psychic .cardType {
+  background: #ff2cc3;
+}
+
+.dark {
+  background: linear-gradient(
+    20deg,
+    rgba(25, 25, 25, 1) 0%,
+    rgba(16, 11, 50, 1) 33%,
+    rgba(92, 2, 73, 1) 100%
+  );
+}
+
+.dark .cardType {
+  background: #5c0249;
+}
+
+.shadow {
+  background: linear-gradient(
+    20deg,
+    rgba(25, 25, 25, 1) 0%,
+    rgba(16, 11, 50, 1) 33%,
+    rgba(92, 2, 73, 1) 100%
+  );
+}
+
+.shadow .cardType {
+  background: #5c0249;
+}
+
+.poison {
+  background: linear-gradient(
+    20deg,
+    rgba(92, 2, 73, 1) 0%,
+    rgba(16, 11, 50, 1) 33%,
+    rgba(25, 25, 25, 1) 0%
+  );
+}
+
+.poison .cardType {
+  background: #5c0249;
+}
+
+.grass {
+  background: linear-gradient(
+    140deg,
+    rgba(196, 218, 61, 1) 0%,
+    rgba(110, 127, 14, 1) 69%,
+    rgba(39, 80, 9, 1) 100%
+  );
+}
+
+.grass .cardType {
+  background: #6e7f0e;
+}
+.bug {
+  background: linear-gradient(
+    140deg,
+    rgba(39, 80, 9, 1) 0%,
+    rgba(110, 127, 14, 1) 69%,
+    rgba(196, 218, 61, 1) 100%
+  );
+}
+
+.ice {
+  background: linear-gradient(
+    230deg,
+    rgba(202, 234, 246, 1) 0%,
+    rgba(160, 234, 241, 1) 46%,
+    rgba(111, 184, 235, 1) 100%
+  );
+}
+
+.bug .cardType {
+  background: #6e7f0e;
+}
+
+.ice .cardType {
+  background: #6fb8eb;
+}
+
+.fairy {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 230, 240, 1) 0%,
+    rgba(255, 197, 224, 1) 34%,
+    rgba(255, 166, 185, 1) 71%,
+    rgba(255, 138, 149, 1) 100%
+  );
+}
+
+.fairy .cardType {
+  background: #ff8a95;
+}
+
+.ghost {
+  background: black;
+}
+
+.ghost .cardType {
+  background: black;
+}
+
+.flying {
+  background: linear-gradient(110deg, #4d6c81 0%, #698ba5 100%);
+}
+
+.flying .cardType {
+  background: #4d6c81;
+}
+
+.dragon {
+  background: linear-gradient(110deg, #44929e 0%, #5fd5e7 100%);
+}
+
+.dragon .cardType {
+  color: black;
+  background: #5fd5e7;
+}
+
+.steel {
+  background: linear-gradient(110deg, #5d7b6f 0%, #3bcb9b 100%);
+}
+
+.steel .cardType {
+  background: #3bcb9b;
+}
+
+.fighting {
+  background: linear-gradient(110deg, #A34027 0%, #FB6537 100%);
+}
+
+.fighting .cardType {
+  background: #FB6537;
+}
+
+figure:nth-child(1) {
+  transform: translateY(0px) rotate(-2deg);
+}
+figure:nth-child(2) {
+  transform: translateY(0px) rotate(1deg);
+}
+figure:nth-child(3) {
+  transform: translateY(0px) rotate(-3deg);
+}
+figure:nth-child(4) {
+  transform: translateY(0px) rotate(2deg);
+}
+figure:nth-child(5) {
+  transform: translateY(0px) rotate(4deg);
+}
+figure:nth-child(6) {
+  transform: translateY(0px) rotate(-2deg);
+}
+figure:nth-child(7) {
+  transform: translateY(0px) rotate(3deg);
+}
+figure:nth-child(8) {
+  transform: translateY(0px) rotate(-1deg);
+}
+figure:nth-child(9) {
+  transform: translateY(0px) rotate(-2deg);
+}
+figure:hover {
+  z-index: 5;
+  box-shadow: 0px 13px 30px -15px #000;
+  transform: translateY(-10px);
+}
